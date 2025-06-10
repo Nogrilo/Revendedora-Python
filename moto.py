@@ -11,14 +11,18 @@ class Moto(Veiculo):
 
         print(f"a moto {self.modelo} da {self.fabricante} tem {self.cilindrada} com {self.tipoPartida} do ano {self.ano} na cor {self.cor} usa {self.combustivel} custa R${self.valor}")
 
+    # Funcao de acelerar bem barulhento
     def acelerar(self):
         print("VRRRRRRROOOOMMM VRAAAP VRAAAP!")
+    
+    # Funcao de freiar
     def freiar(self):
         print("Screeeech!")
+
+    # Funcao de buzinar bem baixinho
     def buzinar(self):
         print("bip bip")
 
-moto = Moto("Biz", "Honda", "125cc", "partida eletrica", "2008", "vermelha", "gasolina comum", "8.000,00")
-moto.acelerar()
-moto.freiar()
-moto.buzinar()
+    # Funcao de apresentar 
+    def apresentar(self):
+        pass

@@ -10,17 +10,22 @@ class Carro(Veiculo):
         self.arCondicionado = arCondicionado
         self.tipoDirecao    = tipoDirecao
 
-        print(f"O {self.modelo} da {self.fabricante} tem {self.qttPortas}, {self.arCondicionado}, {self.tipoDirecao} da cor {self.cor} ano {self.ano} combustivel {self.combustivel} e custa R${self.valor}")
-
+    # Funcao de acelerar 
     def acelerar(self):
         print("vraum vraum")
+    
+    # Funcao de freiar
     def freiar(self):
         print("som de carro freiando")
+    
+    # Funcao de buzinar
     def buzinar(self):
         print("biii biii")
 
-carro = Carro("clio", "renaut", "2 portas", "sem ar", "direção mecanica", "branco", "2015", "gasolina comum", "26.000,00")
-carro.acelerar()
-carro.freiar()
-carro.buzinar()
+    # Funcao de se apresentar
+    def apresentar(self):
+        print(f"Modelo: {self.modelo}\nFabricante: {self.fabricante}\nQuantidade Portas: {self.qttPortas}\nArCondicionado: {self.arCondicionado}\nTipo Direcao: {self.tipoDirecao}\nCor:{self.cor}\nAno: {self.ano}\nCombustivel: {self.combustivel}\nValor: R${self.valor}\n")
+
+
+
 

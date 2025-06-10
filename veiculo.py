@@ -22,3 +22,7 @@ class Veiculo(ABC):
     def buzinar(self):
         pass
 
+    @abstractmethod
+    def apresentar(self):
+        pass
+
