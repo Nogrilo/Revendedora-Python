@@ -1,10 +1,13 @@
 from veiculo import Veiculo
 
+# Criacao da classe moto
 class Moto(Veiculo):
+
+    # Definicao dos atributos
     def __init__ (self, modelo, fabricante, cilindrada, tipoPartida, ano, cor, combustivel, valor):
         super().__init__(fabricante, modelo, cor, ano, combustivel, valor)
-        self.cilindrada = cilindrada
-        self.tipoPartida = tipoPartida
+        self.cilindrada     = cilindrada
+        self.tipoPartida    = tipoPartida
 
         print(f"a moto {self.modelo} da {self.fabricante} tem {self.cilindrada} com {self.tipoPartida} do ano {self.ano} na cor {self.cor} usa {self.combustivel} custa R${self.valor}")
 

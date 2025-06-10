@@ -1,12 +1,14 @@
 from veiculo import Veiculo
 
+# Criacao da classe carro
 class Carro(Veiculo):
+
+    # Definicao dos atributos
     def __init__ (self, modelo, fabricante, qttPortas, arCondicionado, tipoDirecao, cor, ano, combustivel, valor):
         super().__init__(fabricante, modelo, cor, ano, combustivel, valor)
-
-        self.qttPortas = qttPortas
+        self.qttPortas      = qttPortas
         self.arCondicionado = arCondicionado
-        self.tipoDirecao = tipoDirecao
+        self.tipoDirecao    = tipoDirecao
 
         print(f"O {self.modelo} da {self.fabricante} tem {self.qttPortas}, {self.arCondicionado}, {self.tipoDirecao} da cor {self.cor} ano {self.ano} combustivel {self.combustivel} e custa R${self.valor}")
 

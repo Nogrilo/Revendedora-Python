@@ -1,13 +1,16 @@
 from abc import ABC, abstractmethod
 
+# Super classe/classe mae veiculo
 class Veiculo(ABC):
+
+    # Definindo os atributos do veiculo
     def __init__(self, fabricante, modelo, cor, ano, combustivel, valor):
-        self.fabricante = fabricante
-        self.modelo = modelo
-        self.cor = cor
-        self.ano = ano
-        self.combustivel = combustivel
-        self.valor = valor
+        self.fabricante     = fabricante
+        self.modelo         = modelo
+        self.cor            = cor
+        self.ano            = ano
+        self.combustivel    = combustivel
+        self.valor          = valor
 
     @abstractmethod
     def acelerar(self):
