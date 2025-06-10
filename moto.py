@@ -25,4 +25,4 @@ class Moto(Veiculo):
 
     # Funcao de apresentar 
     def apresentar(self):
-        pass
+        print(f"Modelo: {self.modelo}\nFabricante: {self.fabricante}\nCilindrada: {self.cilindrada}\nTipo Partida: {self.tipoPartida}\nAno: {self.ano}\nCor: {self.cor}\nCombustivel: {self.combustivel}\nValor: R${self.valor}")
