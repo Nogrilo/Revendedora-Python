@@ -1,0 +1,21 @@
+from abc import ABC, abstractmethod
+
+class Veiculo(ABC):
+    def __init__(self, fabricante, modelo, cor, ano, combustivel, valor):
+        self.fabricante = fabricante
+        self.modelo = modelo
+        self.cor = cor
+        self.ano = ano
+        self.combustivel = combustivel
+        self.valor = valor
+
+    @abstractmethod
+    def acelerar(self):
+        pass
+    @abstractmethod
+    def freiar(self):
+        pass
+    @abstractmethod
+    def buzinar(self):
+        pass
+
