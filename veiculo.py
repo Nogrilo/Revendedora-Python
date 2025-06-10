@@ -12,6 +12,7 @@ class Veiculo(ABC):
         self.combustivel    = combustivel
         self.valor          = valor
 
+    # Definindo os metodos que sao obrigatorios para todas as subclasses
     @abstractmethod
     def acelerar(self):
         pass
