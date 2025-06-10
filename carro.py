@@ -10,6 +10,10 @@ class Carro(Veiculo):
         self.arCondicionado = arCondicionado
         self.tipoDirecao    = tipoDirecao
 
+    # Funcao de se apresentar
+    def apresentar(self):
+        print(f"Modelo: {self.modelo}\nFabricante: {self.fabricante}\nQuantidade Portas: {self.qttPortas}\nArCondicionado: {self.arCondicionado}\nTipo Direcao: {self.tipoDirecao}\nCor:{self.cor}\nAno: {self.ano}\nCombustivel: {self.combustivel}\nValor: R${self.valor}\n")
+        
     # Funcao de acelerar 
     def acelerar(self):
         print("vraum vraum")
@@ -22,9 +26,7 @@ class Carro(Veiculo):
     def buzinar(self):
         print("biii biii")
 
-    # Funcao de se apresentar
-    def apresentar(self):
-        print(f"Modelo: {self.modelo}\nFabricante: {self.fabricante}\nQuantidade Portas: {self.qttPortas}\nArCondicionado: {self.arCondicionado}\nTipo Direcao: {self.tipoDirecao}\nCor:{self.cor}\nAno: {self.ano}\nCombustivel: {self.combustivel}\nValor: R${self.valor}\n")
+    
 
 
 

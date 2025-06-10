@@ -11,6 +11,10 @@ class Moto(Veiculo):
 
         print(f"a moto {self.modelo} da {self.fabricante} tem {self.cilindrada} com {self.tipoPartida} do ano {self.ano} na cor {self.cor} usa {self.combustivel} custa R${self.valor}")
 
+    # Funcao de apresentar 
+    def apresentar(self):
+        print(f"Modelo: {self.modelo}\nFabricante: {self.fabricante}\nCilindrada: {self.cilindrada}\nTipo Partida: {self.tipoPartida}\nAno: {self.ano}\nCor: {self.cor}\nCombustivel: {self.combustivel}\nValor: R${self.valor}")
+
     # Funcao de acelerar bem barulhento
     def acelerar(self):
         print("VRRRRRRROOOOMMM VRAAAP VRAAAP!")
@@ -22,7 +26,3 @@ class Moto(Veiculo):
     # Funcao de buzinar bem baixinho
     def buzinar(self):
         print("bip bip")
-
-    # Funcao de apresentar 
-    def apresentar(self):
-        print(f"Modelo: {self.modelo}\nFabricante: {self.fabricante}\nCilindrada: {self.cilindrada}\nTipo Partida: {self.tipoPartida}\nAno: {self.ano}\nCor: {self.cor}\nCombustivel: {self.combustivel}\nValor: R${self.valor}")
