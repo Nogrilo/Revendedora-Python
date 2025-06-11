@@ -13,7 +13,7 @@ class Caminhao(Veiculo):
         self.tipoCarroceria     = tipoCarroceria 
 
     # Funcao de se apresentar
-    def apresentar(self):
+    def exibirDados(self):
         print(f"Modelo: {self.modelo}\nFabricante: {self.fabricante}\nQuantidade Portas: {self.qttPortas}\nArCondicionado: {self.arCondicionado}\nCapacidadeCarga: {self.capacidadeCarga}\nTipo Carroceria: {self.tipoCarroceria}\nTipo Direcao: {self.tipoDirecao}\nCor: {self.cor}\nAno: {self.ano}\nCombustivel: {self.combustivel}\nValor: R${self.valor}\n")
         
     # Funcao de acelerar 

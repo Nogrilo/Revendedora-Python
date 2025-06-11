@@ -14,6 +14,10 @@ class Veiculo(ABC):
 
     # Definindo os metodos que sao obrigatorios para todas as subclasses
     @abstractmethod
+    def exibirDados(self):
+        pass
+
+    @abstractmethod
     def acelerar(self):
         pass
     @abstractmethod
@@ -23,7 +27,5 @@ class Veiculo(ABC):
     def buzinar(self):
         pass
 
-    @abstractmethod
-    def apresentar(self):
-        pass
+    
 

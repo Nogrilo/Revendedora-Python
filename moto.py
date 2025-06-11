@@ -9,10 +9,9 @@ class Moto(Veiculo):
         self.cilindrada     = cilindrada
         self.tipoPartida    = tipoPartida
 
-        print(f"a moto {self.modelo} da {self.fabricante} tem {self.cilindrada} com {self.tipoPartida} do ano {self.ano} na cor {self.cor} usa {self.combustivel} custa R${self.valor}")
 
     # Funcao de apresentar 
-    def apresentar(self):
+    def exibirDados(self):
         print(f"Modelo: {self.modelo}\nFabricante: {self.fabricante}\nCilindrada: {self.cilindrada}\nTipo Partida: {self.tipoPartida}\nAno: {self.ano}\nCor: {self.cor}\nCombustivel: {self.combustivel}\nValor: R${self.valor}")
 
     # Funcao de acelerar bem barulhento
