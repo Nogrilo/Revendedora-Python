@@ -12,7 +12,7 @@ class Carro(Veiculo):
 
     # Funcao de se apresentar
     def apresentar(self):
-        print(f"Modelo: {self.modelo}\nFabricante: {self.fabricante}\nQuantidade Portas: {self.qttPortas}\nArCondicionado: {self.arCondicionado}\nTipo Direcao: {self.tipoDirecao}\nCor:{self.cor}\nAno: {self.ano}\nCombustivel: {self.combustivel}\nValor: R${self.valor}\n")
+        print(f"Modelo: {self.modelo}\nFabricante: {self.fabricante}\nQuantidade Portas: {self.qttPortas}\nArCondicionado: {self.arCondicionado}\nTipo Direcao: {self.tipoDirecao}\nCor: {self.cor}\nAno: {self.ano}\nCombustivel: {self.combustivel}\nValor: R${self.valor}\n")
         
     # Funcao de acelerar 
     def acelerar(self):
