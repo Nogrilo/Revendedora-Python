@@ -71,7 +71,7 @@ caminhao.buzinar()
 # Criar lista de veiculos
 veiculos = [carro, moto, caminhao]
 
-# Mostrar todas os dados dos veiculos
+# Mostrar todos os dados dos veiculos
 for veiculo in veiculos:
     veiculo.exibirDados()
     print("\n")
