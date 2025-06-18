@@ -29,4 +29,4 @@ desistindo por ser algo trabalhoso, mas que seria totalmente possível.
 
 Esperamos que goste do nosso código :) .
 
-Vinicius Camargo e Vitor Pazda.
+Vinicius Miranda e Vitor Pazda.
