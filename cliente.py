@@ -1,6 +1,6 @@
 import requests
 
-class Usuario:
+class Cliente:
     def __init__(self, nome, sobrenome, telefone, cep):
         self.nome = nome
         self.sobrenome = sobrenome

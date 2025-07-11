@@ -5,7 +5,7 @@ from veiculo import Veiculo
 from carro import Carro
 from moto import Moto
 from caminhao import Caminhao
-from usuario import Usuario
+from cliente import Cliente
 
 # Funcoes 
 # Definir a funcao de limpar a tela pra ficar bonitinho
@@ -81,7 +81,7 @@ for veiculo in veiculos:
     print("\n")
 
 
-cliente = Usuario("Professor Carlos", "Guerber", "47 9 9999-9999", "89464024")
+cliente = Cliente("Professor Carlos", "Guerber", "47 9 9999-9999", "89464024")
 
 cliente.exibirDados()
 
