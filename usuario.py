@@ -6,7 +6,7 @@ class Usuario:
         self.sobrenome = sobrenome
         self.telefone = telefone
         self.cep = cep
-        self.endereco = self.buscar_endereco(cep)
+        self.endereco = self.buscarEndereco(cep)
         self.veiculosComprados = []
 
     def buscarEndereco(self, cep):
@@ -24,7 +24,7 @@ class Usuario:
             return f"Erro de conexão: {e}"
 
     def comprarVeiculo(self, veiculo):
-        self.veiculos_comprados.append(veiculo)
+        self.veiculosComprados.append(veiculo)
         print(f"Veiculo {veiculo.modelo} comprado com sucesso por {self.nome} {self.sobrenome}")
 
     def exibirDados(self):
