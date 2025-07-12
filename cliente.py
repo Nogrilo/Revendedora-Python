@@ -1,32 +1,37 @@
+# importar a biblioteca pra usar a API
 import requests
 
+# criacao da classe cliente
 class Cliente:
     def __init__(self, nome, sobrenome, telefone, cep):
+        # definicao dos atributos
         self.nome = nome
         self.sobrenome = sobrenome
         self.telefone = telefone
         self.cep = cep
         self.endereco = self.buscarEndereco(cep)
         self.veiculosComprados = []
-
+    
+    # metodo de buscar o endereco, igual o professor nos mostrou na ultima aula
     def buscarEndereco(self, cep):
         try:
-            response = requests.get(f"https://viacep.com.br/ws/{cep}/json/")
-            if response.status_code == 200:
-                dados = response.json()
-                if "erro" not in dados:
+            url = f"https://viacep.com.br/ws/{cep}/json/"
+            resposta = requests.get(url)
+            if resposta.status_code == 200: # deu certo a requisicao
+                dados = resposta.json()
+                if "erro" not in dados: 
                     return f"{dados['logradouro']}, {dados['bairro']}, {dados['localidade']}-{dados['uf']}"
                 else:
-                    return "CEP invalido"
-            else:
-                return "Erro ao buscar o CEP"
+                    return "CEP errado"
         except Exception as e:
             return f"Erro de conexão: {e}"
 
+    # metodo de o cliente comprar o veiculo
     def comprarVeiculo(self, veiculo):
         self.veiculosComprados.append(veiculo)
         print(f"Veiculo {veiculo.modelo} comprado com sucesso por {self.nome} {self.sobrenome}")
 
+    # exibir os dados do cliente, e a lista de veiculos comprados (caso tenha)
     def exibirDados(self):
         print(f"Nome: {self.nome} {self.sobrenome}")
         print(f"Telefone: {self.telefone}")
