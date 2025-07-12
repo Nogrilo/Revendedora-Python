@@ -19,8 +19,8 @@ valor
 Métodos:
 exibirDados()
 acelerar()
-freiar():
-buzinar():
+freiar()
+buzinar()
 
 Desenvolvemos um software bem simples, apenas com objetivo de mostrar como a Programação Orientada a Objetos funciona em Python.
 
@@ -29,4 +29,29 @@ desistindo por ser algo trabalhoso, mas que seria totalmente possível.
 
 Esperamos que goste do nosso código :) .
 
-Vinicius Camargo e Vitor Pazda.
+----
+
+Atualização do software!
+
+Agora temos uma nova classe, sendo o Cliente. 
+Atributos:
+nome
+sobrenome
+telefone
+cep
+endereco (que a API que o professor nos mostrou retorna o endereco)
+veiculos comprados (lista/agregacao de veiculos comprados)
+
+Métodos:
+buscarEndereco()
+comprarVeiculo()
+exibirDados() 
+
+Essa nova classe tem o diferencial de uma API integrada, que busca o endereco inserido com base no CEP.
+É uma atualização bem simples, mas que utiliza uma API de terceiro, no caso viacep.
+
+Instanciamos um cliente bem especial no nosso sistema, que compra o carro intitulado "carrao", e adiciona na lista de veiculos comprados.
+
+Espero que goste do nosso programa!
+
+Vinicius Miranda, Filipe e Vitor Pazda.
