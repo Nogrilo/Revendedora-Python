@@ -47,11 +47,12 @@ buscarEndereco()
 comprarVeiculo()
 exibirDados() 
 
-Essa nova classe tem o diferencial de uma API integrada, que busca o endereco inserido com base no CEP.
-É uma atualização bem simples, mas que utiliza uma API de terceiro, no caso viacep.
+A pequena alteração que fizemos, foi a criação dessa nova classe, e a integração com o serviço de terceiro!
+Essa nova classe tem o diferencial de uma API integrada, que busca o endereco do cliente, com base no CEP inserido.
+É uma atualização bem simples, mas que utiliza a API viacep.
+Acreditamos que ter utilizado um projeto anterior, apenas para adiconar uma funcionalidade extra seria mais prático e rápido, do que criar algo completamente do zero.
 
 Instanciamos um cliente bem especial no nosso sistema, que compra o carro intitulado "carrao", e adiciona na lista de veiculos comprados.
 
 Espero que goste do nosso programa!
-
 Vinicius Miranda, Filipe e Vitor Pazda.
