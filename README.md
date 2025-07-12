@@ -52,6 +52,12 @@ Essa nova classe tem o diferencial de uma API integrada, que busca o endereco do
 É uma atualização bem simples, mas que utiliza a API viacep.
 Acreditamos que ter utilizado um projeto anterior, apenas para adiconar uma funcionalidade extra seria mais prático e rápido, do que criar algo completamente do zero.
 
+A nova classe precisa receber alguns parametros, como:
+Nome, sobrenome, telefone, cep. 
+Assim concluindo seu "cadastro", que seria a instancia do objeto.
+
+Com essa classe, podemos chamar seus metodos.
+
 Instanciamos um cliente bem especial no nosso sistema, que compra o carro intitulado "carrao", e adiciona na lista de veiculos comprados.
 
 Espero que goste do nosso programa!
