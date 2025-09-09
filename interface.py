@@ -89,4 +89,12 @@ carro02 = carro01.clone()
 carro01.exibirDados()
 carro02.exibirDados()
 
+limpaTela()
+
+caminhao01 = Caminhao("Grande","Scania", 2,"Sim", "Elétrica", "35T", "Baú 4 Eixos", "Bordô", "2025", "Diesel", "1.000.000.00")
+
+caminhao02 = caminhao01.clone()
+
+caminhao02.exibirDados()
+
 
