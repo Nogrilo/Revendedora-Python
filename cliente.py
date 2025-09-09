@@ -1,5 +1,6 @@
 # importar a biblioteca pra usar a API
 import requests
+import copy
 
 # criacao da classe cliente
 class Cliente:
@@ -39,3 +40,7 @@ class Cliente:
         print("Veiculos comprados:")
         for v in self.veiculosComprados:
             print(f"- {v.fabricante} {v.modelo} ({v.ano})")
+
+    # Funcao de Clonar, do padrao de projeto
+    def clone(self):
+        return copy.deepcopy(self)

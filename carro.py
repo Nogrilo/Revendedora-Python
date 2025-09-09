@@ -1,4 +1,5 @@
 from veiculo import Veiculo
+import copy
 
 # Criacao da classe carro
 class Carro(Veiculo):
@@ -25,6 +26,10 @@ class Carro(Veiculo):
     # Funcao de buzinar
     def buzinar(self):
         print("biii biii")
+
+    # Funcao de Clonar, do padrao de projeto
+    def clone(self):
+        return copy.deepcopy(self)
 
     
 
