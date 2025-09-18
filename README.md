@@ -61,4 +61,4 @@ Com essa classe, podemos chamar seus metodos.
 Instanciamos um cliente bem especial no nosso sistema, que compra o carro intitulado "carrao", e adiciona na lista de veiculos comprados.
 
 Espero que goste do nosso programa!
-Vinicius Miranda, Filipe e Vitor Pazda
+Vinicius Miranda, Filipi, Jefferson e Vitor Pazda
