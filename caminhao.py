@@ -30,7 +30,7 @@ class Caminhao(Veiculo):
         print("BUBUUUU!")
 
     # Funcao de Clonar, do padrao de projeto
-    def clone(self):
+    def clonar(self):
         return copy.deepcopy(self)
     
 

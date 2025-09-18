@@ -4,7 +4,7 @@ import copy
 
 # criacao da classe cliente
 class Cliente:
-    def __init__(self, nome, sobrenome, telefone, cep):
+    def __init__(self, nome, sobrenome, telefone, cep, veiculosComprados):
         # definicao dos atributos
         self.nome = nome
         self.sobrenome = sobrenome
@@ -42,5 +42,5 @@ class Cliente:
             print(f"- {v.fabricante} {v.modelo} ({v.ano})")
 
     # Funcao de Clonar, do padrao de projeto
-    def clone(self):
+    def clonar(self):
         return copy.deepcopy(self)

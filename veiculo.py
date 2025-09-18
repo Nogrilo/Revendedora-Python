@@ -29,7 +29,7 @@ class Veiculo(ABC):
 
     # Definindo o metodo de clone, do padrao de projeto Prototype
     @abstractmethod
-    def clone(self):
+    def clonar(self):
         pass
 
     

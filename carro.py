@@ -28,7 +28,7 @@ class Carro(Veiculo):
         print("biii biii")
 
     # Funcao de Clonar, do padrao de projeto
-    def clone(self):
+    def clonar(self):
         return copy.deepcopy(self)
 
     

@@ -84,7 +84,7 @@ limpaTela()
 #cliente.exibirDados()
 
 carro01 = Carro("Civic", "Honda", 4, "Sim", "Direção Elétrica", "Preto", "2025", "Flex", "120.000")
-carro02 = carro01.clone()
+carro02 = carro01.clonar()
 
 carro01.exibirDados()
 carro02.exibirDados()
@@ -93,8 +93,14 @@ limpaTela()
 
 caminhao01 = Caminhao("Grande","Scania", 2,"Sim", "Elétrica", "35T", "Baú 4 Eixos", "Bordô", "2025", "Diesel", "1.000.000.00")
 
-caminhao02 = caminhao01.clone()
+caminhao02 = caminhao01.clonar()
 
 caminhao02.exibirDados()
+
+cliente1 = Cliente("Vinicius", "Miranda", "47 9 9999-999", "89460000", "")
+
+cliente1.comprarVeiculo(caminhao01)
+
+cliente1.exibirDados()
 
 
