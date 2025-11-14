@@ -30,3 +30,6 @@ class Moto(Veiculo):
     # Funcao de Clonar, do padrao de projeto
     def clonar(self):
         return copy.deepcopy(self)
+    
+    def __str__(self):
+        return f"self.fabricante {self.modelo} {self.ano}"

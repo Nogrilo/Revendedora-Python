@@ -26,11 +26,11 @@ def main():
             combustivel     = input("Combustivel: ")
             valor           = float(input("Valor: "))
 
-            facade.cadastrar_carro(modelo, fabricante, qttPortas, arCondicionado, tipoDirecao, cor, ano, combustivel, valor)
+            facade.cadastrarCarro(modelo, fabricante, qttPortas, arCondicionado, tipoDirecao, cor, ano, combustivel, valor)
             print("Carro cadastrado!")
 
         elif opcao == 5:
-            for i, v in enumerate(facade.listar_veiculos()):
+            for i, v in enumerate(facade.listarVeiculos()):
                 print(f"{i} - {v}")
 
         elif opcao == 7:
@@ -40,7 +40,7 @@ def main():
             cliente = next((c for c in facade.clientes if c.cpf == cpf), None)
 
             if cliente:
-                facade.vender_veiculo(cliente, id)
+                facade.venderVeiculo(cliente, id)
                 print("Venda concluída!")
 
         elif opcao == 0:

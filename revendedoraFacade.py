@@ -1,4 +1,3 @@
-# facade.py
 from carro import Carro
 from moto import Moto
 from caminhao import Caminhao

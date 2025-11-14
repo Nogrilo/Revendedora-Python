@@ -32,5 +32,9 @@ class Veiculo(ABC):
     def clonar(self):
         pass
 
+    @abstractmethod
+    def __str__(self):
+        return f"{self.fabricante} {self.modelo} {self.ano}"
+
     
 

@@ -33,6 +33,8 @@ class Caminhao(Veiculo):
     def clonar(self):
         return copy.deepcopy(self)
     
+    def __str__(self):
+        return f"self.fabricante {self.modelo} {self.ano}"
 
 
 
