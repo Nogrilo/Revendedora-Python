@@ -30,9 +30,3 @@ class Carro(Veiculo):
     # Funcao de Clonar, do padrao de projeto
     def clonar(self):
         return copy.deepcopy(self)
-
-    
-
-
-
-

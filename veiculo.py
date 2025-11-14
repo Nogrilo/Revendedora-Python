@@ -27,7 +27,7 @@ class Veiculo(ABC):
     def buzinar(self):
         pass
 
-    # Definindo o metodo de clone, do padrao de projeto Prototype
+    # Definindo o metodo de clonar, do padrao de projeto Prototype
     @abstractmethod
     def clonar(self):
         pass

@@ -6,11 +6,11 @@ import copy
 class Cliente:
     def __init__(self, nome, sobrenome, telefone, cep, veiculosComprados):
         # definicao dos atributos
-        self.nome = nome
-        self.sobrenome = sobrenome
-        self.telefone = telefone
-        self.cep = cep
-        self.endereco = self.buscarEndereco(cep)
+        self.nome           = nome
+        self.sobrenome      = sobrenome
+        self.telefone       = telefone
+        self.cep            = cep
+        self.endereco       = self.buscarEndereco(cep)
         self.veiculosComprados = []
     
     # metodo de buscar o endereco, igual o professor nos mostrou na ultima aula
@@ -21,7 +21,7 @@ class Cliente:
             if resposta.status_code == 200: # deu certo a requisicao
                 dados = resposta.json()
                 if "erro" not in dados: 
-                    return f"{dados['logradouro']}, {dados['bairro']}, {dados['localidade']}-{dados['uf']}"
+                    return f"{dados['logradouro']}, {dados['bairro']}, {dados['localidade']} {dados['uf']}"
                 else:
                     return "CEP errado"
         except Exception as e:
