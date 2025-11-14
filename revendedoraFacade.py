@@ -21,8 +21,8 @@ class revendedoraFacade:
         self.veiculos.append(carro)
         return carro
 
-    def cadastrarMoto(self, marca, modelo, ano, preco, cilindradas):
-        moto = Moto(marca, modelo, ano, preco, cilindradas)
+    def cadastrarMoto(self, modelo, fabricante, cilindrada, tipoPartida, ano, cor, combustivel, valor):
+        moto = Moto(modelo, fabricante, cilindrada, tipoPartida, ano, cor, combustivel, valor)
         self.veiculos.append(moto)
         return moto
 

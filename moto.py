@@ -32,4 +32,4 @@ class Moto(Veiculo):
         return copy.deepcopy(self)
     
     def __str__(self):
-        return f"self.fabricante {self.modelo} {self.ano}"
+        return f"{self.fabricante} {self.modelo} {self.ano}"

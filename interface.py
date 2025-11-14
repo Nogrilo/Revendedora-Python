@@ -29,6 +29,19 @@ def main():
             facade.cadastrarCarro(modelo, fabricante, qttPortas, arCondicionado, tipoDirecao, cor, ano, combustivel, valor)
             print("Carro cadastrado!")
 
+        elif opcao == 2:
+            modelo          = input("Modelo: ")
+            fabricante      = input("Fabricante: ")
+            cilindrada      = int(input("Cilindrada: "))
+            tipoPatida      = input("Tipo Partida: ")
+            cor             = input("Cor: ")
+            ano             = int(input("Ano: "))
+            combustivel     = input("Combustivel: ")
+            valor           = float(input("Valor: "))
+
+            facade.cadastrarMoto(modelo, fabricante, cilindrada, tipoPatida, cor, ano, combustivel, valor)
+            print("Moto cadastrada!")
+
         elif opcao == 5:
             for i, v in enumerate(facade.listarVeiculos()):
                 print(f"{i} - {v}")
