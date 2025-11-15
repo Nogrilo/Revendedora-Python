@@ -8,8 +8,8 @@ class revendedoraFacade:
         self.veiculos = []
         self.clientes = []
 
-    def cadastrarCliente(self, nome, cpf):
-        cliente = Cliente(nome, cpf)
+    def cadastrarCliente(self, nome, sobrenome, telefone, cep, veiculosComprados):
+        cliente = Cliente(nome, sobrenome, telefone, cep, veiculosComprados)
         self.clientes.append(cliente)
         return cliente
 

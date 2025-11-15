@@ -65,9 +65,23 @@ def main():
             facade.cadastrarCaminhao(modelo, fabricante, qttPortas, arCondicionado, tipoDirecao, capacidadeCarga, tipoCarroceria, cor, ano, combustivel, valor)
             print("Caminhao cadastrado!")
 
+        elif opcao == 4:
+            limparTela()
+            nome                = input("Nome: ")
+            sobrenome           = input("Sobrenome: ")
+            telefone            = input("Telefone: ")
+            cep                 = input("Cep: ")
+            veiculosComprados   = []
+
+            facade.cadastrarCliente(nome, sobrenome, telefone, cep, veiculosComprados)
+            print("Cliente cadastrado!")
 
         elif opcao == 5:
             for i, v in enumerate(facade.listarVeiculos()):
+                print(f"{i} - {v}")
+
+        elif opcao == 6:
+            for i, v in enumerate(facade.listarClientes()):
                 print(f"{i} - {v}")
 
         elif opcao == 7:
