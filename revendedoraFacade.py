@@ -34,11 +34,16 @@ class revendedoraFacade:
     def listarVeiculos(self):
         return self.veiculos
 
-    def venderVeiculo(self, cliente, id_veiculo):
-        if id_veiculo < 0 or id_veiculo >= len(self.veiculos):
-            return None
-        
-        veiculo = self.veiculos[id_veiculo]
-        cliente.adicionar_compra(veiculo)
-        self.veiculos.pop(id_veiculo)
-        return veiculo
+    def venderVeiculo(self, cliente, modelo):
+        veiculo = self.buscarVeiculoPorModelo(modelo)
+
+        cliente.comprarVeiculo(veiculo)
+
+        self.veiculos.remove(veiculo)
+
+    # metodo para buscar o veiculo dentro da lista
+    def buscarVeiculoPorModelo(self, modelo):
+        for v in self.veiculos:
+            if v.modelo.lower() == modelo.lower():
+                return v
+        return None

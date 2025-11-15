@@ -86,13 +86,12 @@ def main():
 
         elif opcao == 7:
             modelo              = input("Digite o modelo: ")
-            nome                = input("Digite o Nome do cliente")
+            nome                = input("Digite o nome do cliente: ")
 
-            cliente = next((c for c in facade.clientes if c.nome == nome), None)
+            cliente = next((c for c in facade.clientes if c.nome.lower() == nome.lower()), None)
 
-            if cliente:
-                facade.venderVeiculo(cliente, modelo)
-                print("Venda concluída!")
+            facade.venderVeiculo(cliente, modelo)
+            print("Venda concluída!")
 
         elif opcao == 0:
             break
