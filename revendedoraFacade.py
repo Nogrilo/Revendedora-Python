@@ -26,8 +26,8 @@ class revendedoraFacade:
         self.veiculos.append(moto)
         return moto
 
-    def cadastrarCaminhao(self, marca, modelo, ano, preco, eixo):
-        caminhao = Caminhao(marca, modelo, ano, preco, eixo)
+    def cadastrarCaminhao(self, modelo, fabricante, qttPortas, arCondicionado, tipoDirecao, capacidadeCarga, tipoCarroceria, cor, ano, combustivel, valor):
+        caminhao = Caminhao(modelo, fabricante, qttPortas, arCondicionado, tipoDirecao, capacidadeCarga, tipoCarroceria, cor, ano, combustivel, valor)
         self.veiculos.append(caminhao)
         return caminhao
 

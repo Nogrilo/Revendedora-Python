@@ -1,4 +1,8 @@
 from revendedoraFacade import revendedoraFacade
+import os # importar biblioteca para limpar tela
+
+def limparTela():
+    os.system('cls')
 
 def main():
     facade = revendedoraFacade()
@@ -16,6 +20,7 @@ def main():
         opcao = int(input("Escolha: "))
 
         if opcao == 1:
+            limparTela()
             modelo          = input("Modelo: ")
             fabricante      = input("Fabricante: ")
             qttPortas       = int(input("Portas: "))
@@ -30,6 +35,7 @@ def main():
             print("Carro cadastrado!")
 
         elif opcao == 2:
+            limparTela()
             modelo          = input("Modelo: ")
             fabricante      = input("Fabricante: ")
             cilindrada      = int(input("Cilindrada: "))
@@ -41,6 +47,24 @@ def main():
 
             facade.cadastrarMoto(modelo, fabricante, cilindrada, tipoPatida, cor, ano, combustivel, valor)
             print("Moto cadastrada!")
+
+        elif opcao == 3:
+            limparTela()
+            modelo          = input("Modelo: ")
+            fabricante      = input("Fabricante: ")
+            qttPortas       = int(input("Portas: "))
+            arCondicionado  = input("Possui ar condicionado? (S/N): ")
+            tipoDirecao     = input("Tipo direcao: ")
+            capacidadeCarga = input("Capacidade Carga: ")
+            tipoCarroceria  = input("Tipo da Carroceria: ")
+            cor             = input("Cor: ")
+            ano             = int(input("Ano: "))
+            combustivel     = input("Combustivel: ")
+            valor           = float(input("Valor: "))
+
+            facade.cadastrarCaminhao(modelo, fabricante, qttPortas, arCondicionado, tipoDirecao, capacidadeCarga, tipoCarroceria, cor, ano, combustivel, valor)
+            print("Caminhao cadastrado!")
+
 
         elif opcao == 5:
             for i, v in enumerate(facade.listarVeiculos()):
