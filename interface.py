@@ -85,13 +85,13 @@ def main():
                 print(f"{i} - {v}")
 
         elif opcao == 7:
-            id = int(input("ID do veículo: "))
-            cpf = input("CPF do cliente: ")
+            modelo              = input("Digite o modelo: ")
+            nome                = input("Digite o Nome do cliente")
 
-            cliente = next((c for c in facade.clientes if c.cpf == cpf), None)
+            cliente = next((c for c in facade.clientes if c.nome == nome), None)
 
             if cliente:
-                facade.venderVeiculo(cliente, id)
+                facade.venderVeiculo(cliente, modelo)
                 print("Venda concluída!")
 
         elif opcao == 0:
