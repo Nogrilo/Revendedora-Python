@@ -77,11 +77,11 @@ def main():
             print("Cliente cadastrado!")
 
         elif opcao == 5:
-            for i, v in enumerate(facade.listarVeiculos()):
+            for i, v in enumerate(facade.listarVeiculos(), start=1):
                 print(f"{i} - {v}")
 
         elif opcao == 6:
-            for i, v in enumerate(facade.listarClientes()):
+            for i, v in enumerate(facade.listarClientes(), start=1):
                 print(f"{i} - {v}")
 
         elif opcao == 7:
